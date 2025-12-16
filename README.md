@@ -9,7 +9,7 @@ When a new piece is made:
 
 3. Open that video in Motion 5. Crop it to the square aspect ratio, 2000x2000.
 
-4. Adjust the start and end of the video so it loops perfectly
+4. Adjust the start and end of the video so it loops perfectly. Try to make it so the first frame is a good one for the still shot.
 
 5. Save/Export it as a .mov and put it locally in /Product Shots/carousel/mov
 
@@ -38,4 +38,10 @@ to make a thumbnail version of the gif and save it in `/root/potterytools/carous
 python3 gif_frame_2_png.py /root/potterytools/carousel/gif/00000-thumb.gif
 ```
 
+11. deploy the image to the website with this command:
+```
+./upload_to_website.sh
+```
+
+12. Add that image to the database
 

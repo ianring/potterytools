@@ -21,7 +21,8 @@ def extract_gif_frame(gif_path, frame_number, output_dir):
     
     # 2. Construct the full output path
     # Example: 'extracted_frames/my_animation_frame_0.png'
-    output_filename = f"{base_name}_frame_{frame_number}.png"
+    output_dir = '/root/potterytools/carousel/png'
+    output_filename = f"{base_name}.png"
     output_path = os.path.join(output_dir, output_filename)
     
     # 3. Create the output directory if it doesn't exist
