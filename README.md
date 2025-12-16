@@ -42,6 +42,7 @@ python3 gif_frame_2_png.py /root/potterytools/carousel/gif/00000-thumb.gif
 ```
 ./upload_to_website.sh
 ```
+that will copy it over to the ianring.com server at `/var/www/darkware.shop/public_html/pieces/images/carousel/png`
 
-12. Add that image to the database
+12. Add that image to the database at its public path: `/pieces/images/carousel/png/00000.png`
 
