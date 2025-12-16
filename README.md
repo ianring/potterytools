@@ -44,5 +44,11 @@ python3 gif_frame_2_png.py /root/potterytools/carousel/gif/00000-thumb.gif
 ```
 that will copy it over to the ianring.com server at `/var/www/darkware.shop/public_html/pieces/images/carousel/png`
 
-12. Add that image to the database at its public path: `/pieces/images/carousel/png/00000.png`
+12. run this script to copy over the large version of the animated GIF
+```
+./deploy.php
+```
 
+13. Add the two images to the database
+	thumb: `/pieces/images/carousel/png/00000.png`
+	thumb: `/pieces/images/carousel/gif/00000.gif`
