@@ -50,5 +50,7 @@ that will copy it over to the ianring.com server at `/var/www/darkware.shop/publ
 ```
 
 13. Add the two images to the database
-	thumb: `/pieces/images/carousel/png/00000.png`
-	thumb: `/pieces/images/carousel/gif/00000.gif`
+
+```
+INSERT INTO `altpottery_images` (`piece`, `url`, `thumburl`) VALUES ('29', '/pieces/images/carousel/gif/00000.gif', '/pieces/images/carousel/png/00000-thumb.png');
+```
