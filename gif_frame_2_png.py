@@ -7,7 +7,7 @@ import os
 OUTPUT_DIRECTORY = 'extracted_frames'
 FRAME_INDEX_TO_EXTRACT = 0  # The first frame (0)
 
-def extract_gif_frame(gif_path, frame_number, output_dir):
+def extract_gif_frame(gif_path, frame_number):
     """
     Extracts a specific frame from an animated GIF and saves it as a PNG 
     in a specified output directory.

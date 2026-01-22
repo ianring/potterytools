@@ -54,3 +54,27 @@ that will copy it over to the ianring.com server at `/var/www/darkware.shop/publ
 ```
 INSERT INTO `altpottery_images` (`piece`, `url`, `thumburl`) VALUES ('29', '/pieces/images/carousel/gif/00000.gif', '/pieces/images/carousel/png/00000-thumb.png');
 ```
+
+
+TODO: make a script that does all of this fucking stuff all in one go
+
+
+
+== new in progress photos ==
+
+put the photos into appropriate folders of 
+
+1. ssh root@i-a-n.ca
+
+# 1. Force ownership of the entire data directory to the PHP user
+chown -R apache:apache /data/imagetool
+
+# 2. Set directory permissions (775 allows apache to create folders/files)
+find /data/imagetool -type d -exec chmod 775 {} +
+
+# 3. Set file permissions (664 allows apache to edit/delete images)
+find /data/imagetool -type f -exec chmod 664 {} +
+
+# 4. Refresh the SELinux context for Fedora
+chcon -R -t httpd_sys_rw_content_t /data/imagetool
+
